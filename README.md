@@ -1,0 +1,59 @@
+# 🏥 Blood Cell Classifier
+
+A simple AI project that classifies blood cells using Convolutional Neural Networks.
+
+## What Does It Do?
+
+Upload a blood cell image → AI predicts the cell type → See results!
+
+**8 Blood Cell Types:** Basophil, Eosinophil, Erythroblast, Immature Granulocytes, Lymphocyte, Monocyte, Neutrophil, Platelet
+
+## Live Demo
+
+Try it here: [Blood Cell Classifier](https://huggingface.co/spaces/sharddha123/Blood-cell-classifier)
+
+## Quick Start
+
+### Run Locally
+
+```bash
+# Install packages
+pip install -r requirements.txt
+
+# Run app
+streamlit run app.py
+
+# Open browser
+http://localhost:8501
+```
+
+### Or Just Use Online
+
+No installation needed! Click the link above.
+
+## Dataset
+
+- **Source:** BloodMNIST
+- **Images:** 17,092 blood cell microscope images
+- **Size:** 28×28 pixels
+- **Train/Val/Test:** 10,234 / 2,594 / 3,421 images
+
+## Model
+
+- **Type:** Convolutional Neural Network (CNN)
+- **Framework:** TensorFlow/Keras
+- **Accuracy:** 88.51% on test data
+- **Training Data:** 10,234 images
+- **Epochs:** 30
+
+## How I Built It
+
+1. Downloaded BloodMNIST dataset
+2. Loaded & explored the data
+3. Built a CNN with 3 conv layers
+4. Added dropout to prevent overfitting
+5. Trained for 30 epochs
+6. Got 88.51% accuracy
+7. Deployed on Hugging Face
+
+## Files
