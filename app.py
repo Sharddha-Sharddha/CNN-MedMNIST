@@ -12,7 +12,7 @@ st.title('Blood Cell Classifier 💉')
 #Model loading
 @st.cache_resource   #load model once and reuse it 
 def load_model():
-	return tf.keras.models.load_model('best_blood_cell_model_1.keras')
+	return tf.keras.models.load_model('best_blood_cell_model_1.h5')
 
 
 model = load_model()
