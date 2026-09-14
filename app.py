@@ -65,7 +65,7 @@ if uploaded_file is not None:
 	with col_2:
 		st.subheader("🩺 Model's Prediction")
 		st.metric('Predicted Cell Type', classes[prediction_class].upper())
-		st.metric('Confidence', f'{confidence:.2f}%'}
+		st.metric('Confidence', f'{confidence:.2f}%')
 		
 		if confidence>90:
 			st.success('✅ High Confidence!') #Show green success box with message
