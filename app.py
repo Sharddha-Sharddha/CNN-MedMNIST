@@ -31,7 +31,7 @@ st.sidebar.info('''
 ''')
 
 #file uploader
-uploaded_file = st.file_uploader('📤 Upload blood cell image' type = ['jpg','jpeg','png'])  #creates the button '📤 Upload blood cell image' to upload image
+uploaded_file = st.file_uploader("📤 Upload blood cell image", type = ['jpg','jpeg','png'])  #creates the button '📤 Upload blood cell image' to upload image
 
 # checking file uploaded
 if uploaded_file is not None:
